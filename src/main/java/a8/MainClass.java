@@ -14,10 +14,11 @@ public class MainClass {
 		
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(
-        		MainConfig.class,
-        		AlphaDbConfig.class,
-        		BetaDbConfig.class,
-        		XaConfig.class);
+        		MainConfig.class
+        		,AlphaDbConfig.class
+        		,BetaDbConfig.class
+//        		,XaConfig.class
+        		);
         ctx.refresh();
         
         String run = "20";
