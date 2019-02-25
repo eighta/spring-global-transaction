@@ -13,7 +13,7 @@ public class GlobalTxSvc {
 	@Autowired
 	PostgreSQLSvc postgreSQLSvc;
 
-	@Transactional(transactionManager="betaTransactionManager")
+	@Transactional(transactionManager="xaTransactionManager")
 	public void create(String run) {
 		postgreSQLSvc.create(run,run);		
 		mySqlSvc.create(run);

@@ -17,11 +17,11 @@ public class MainClass {
         		MainConfig.class
         		,AlphaDbConfig.class
         		,BetaDbConfig.class
-//        		,XaConfig.class
+        		,XaConfig.class
         		);
         ctx.refresh();
         
-        String run = "20";
+        String run = "23";
         ctx.getBean(PostgreSQLSvc.class).create(run, run);
 
 //        ctx.getBean(MySqlSvc.class).create(run);

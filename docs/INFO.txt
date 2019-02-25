@@ -17,4 +17,4 @@ standalone impl: Atomikos, Bitronix, JOTM, Narayana (JBoss Transactions)
  JtaTransactionManager is part of Spring's transaction management support
  
  
-
+http://fabiomaffioletti.me/blog/2014/04/15/distributed-transactions-multiple-databases-spring-boot-spring-data-jpa-atomikos/

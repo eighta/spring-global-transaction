@@ -32,16 +32,16 @@ public class XaConfig {
 		return jtaTransactionManager;
 	}
 	
-	//use an XA-aware DataSource wrapper for Atomikos
-	@Bean
-	public AtomikosDataSourceBean atomikosDataSource(
-			@Autowired
-			DataSource alphaDataSource
-			) throws SQLException {
-		
-		AtomikosDataSourceBean atomikosDataSourceBean = new AtomikosDataSourceBean();
-		atomikosDataSourceBean.setUniqueResourceName("XADBMS");
-		atomikosDataSourceBean.setXaDataSource((XADataSource)alphaDataSource);
-		return atomikosDataSourceBean;
-	}
+//	//use an XA-aware DataSource wrapper for Atomikos
+//	@Bean
+//	public AtomikosDataSourceBean atomikosDataSource(
+//			@Autowired
+//			DataSource alphaDataSource
+//			) throws SQLException {
+//		
+//		AtomikosDataSourceBean atomikosDataSourceBean = new AtomikosDataSourceBean();
+//		atomikosDataSourceBean.setUniqueResourceName("XADBMS");
+//		atomikosDataSourceBean.setXaDataSource((XADataSource)alphaDataSource);
+//		return atomikosDataSourceBean;
+//	}
 }
