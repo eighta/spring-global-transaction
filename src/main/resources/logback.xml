@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- http://saltnlight5.blogspot.com.co/2013/08/how-to-configure-slf4j-with-different.html -->
+<!-- http://logback.qos.ch/manual/configuration.html -->
+
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<!-- NORMAL -->
+			<!-- <pattern>%d{HH:mm:ss.SSS} [%thread] [%-5level] %logger{36} - %msg%n</pattern> -->
+			
+			<pattern>[%-5level] %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="trace">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

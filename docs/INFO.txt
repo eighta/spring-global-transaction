@@ -1,0 +1,20 @@
+Local - Tx (JDBC, JMS, ...)
+Global - DEDICATED TRANSACTION MANAGER
+ Multiple transactional resources in a single TX
+ Propagation TX contexts to other transaction managers
+ 
+Two Phase Commit (2PC) and XA
+ 
+XA-aware transaction manager
+
+XA-aware transactional resources
+
+JTA, Java Transaction API
+JTA can also be used without XA
+built-in with JavaEE servers (prefer)
+standalone impl: Atomikos, Bitronix, JOTM, Narayana (JBoss Transactions)
+ 
+ JtaTransactionManager is part of Spring's transaction management support
+ 
+ 
+
