@@ -6,7 +6,7 @@ import conf.AlphaDbConfig;
 import conf.BetaDbConfig;
 import conf.MainConfig;
 import conf.XaConfig;
-import services.PostgreSQLSvc;
+import services.GlobalTxSvc;
 
 public class MainClass {
 
@@ -21,12 +21,10 @@ public class MainClass {
         		);
         ctx.refresh();
         
-        String run = "23";
-        ctx.getBean(PostgreSQLSvc.class).create(run, run);
-
+        String run = "28";
+//        ctx.getBean(PostgreSQLSvc.class).create(run, run);
 //        ctx.getBean(MySqlSvc.class).create(run);
-        
-//        ctx.getBean(GlobalTxSvc.class).create(run);;
+        ctx.getBean(GlobalTxSvc.class).chainedTransactionManagerService(run);
 
                 
         ctx.close();

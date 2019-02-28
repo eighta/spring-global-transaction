@@ -18,3 +18,5 @@ standalone impl: Atomikos, Bitronix, JOTM, Narayana (JBoss Transactions)
  
  
 http://fabiomaffioletti.me/blog/2014/04/15/distributed-transactions-multiple-databases-spring-boot-spring-data-jpa-atomikos/
+
+https://www.javaworld.com/article/2077963/distributed-transactions-in-spring--with-and-without-xa.html
